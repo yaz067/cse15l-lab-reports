@@ -77,7 +77,7 @@ We’ll see now another way to copy a file (or many files!) from your computer t
 
 
 
-My output like this:
+
 
 - Open local terminal use 'scp' moving the 'WhereAmI.java'.  
 
@@ -89,7 +89,10 @@ scp WhereAmI.java cs151wi22ajg@ieng6.ucsd.edu:~/
 
 ```
 ssh cs15lwi22ajg@ieng6.ucsd.edu "cd ~; javac WhereAmI.java; java WhereAmI"
-```
+```  
+
+After making changes on the file 'WhereAmI.java', we can use 2 up arrow keys to retype the first 'scp' command, press enter, then, retype the second command using the same method, and press enter. Finally, we only use 6 keystrokes.
+
 
 
 My terminal like this:
