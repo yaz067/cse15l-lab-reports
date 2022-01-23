@@ -82,31 +82,20 @@ My output like this:
 - Open local terminal use 'scp' moving the 'WhereAmI.java'.  
 
 ```
-scp WhereAmI.java cs15lwi22ajq@ieng6.ucsd.edu
+scp WhereAmI.java cs151wi22ajg@ieng6.ucsd.edu:~/
 ```
 
 - Using following(my) command to tranfer local file.
 
 ```
-ssh cs15lwi22ajq@ieng6.ucsd.edu:
+ssh cs15lwi22ajg@ieng6.ucsd.edu "cd ~; javac WhereAmI.java; java WhereAmI"
 ```
 
-- Complie the file using following command.
-
-```
-javac WhereAmI.java 
-```
-
-- Run it!
-
-```
-java WhereAmI 
-```
 
 My terminal like this:
 
 
-![](./15.png) 
+![](./16.png) 
 
 > Notes: After using 'scp' to copy the file `WhereAmI`, I can the file and its information by 'ls -l' command. The differences of the result after compiling WhereAmI on the server are different directory and user name.  
 
