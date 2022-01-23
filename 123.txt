@@ -1,0 +1,22 @@
+
+
+- Open local terminal use 'scp' moving the 'WhereAmI.java'.  
+
+```
+scp WhereAmI.java cs151wi22ajg@ieng6.ucsd.edu:~/
+```
+
+- Using following(my) command to tranfer local file.
+
+```
+ssh cs15lwi22ajg@ieng6.ucsd.edu "cd ~; javac WhereAmI.java; java WhereAmI"
+```  
+
+After making changes on the file 'WhereAmI.java', we can use 2 up arrow keys to retype the first 'scp' command, press enter, then, retype the second command using the same method, and press enter. Finally, we only use 6 keystrokes.
+
+
+
+My terminal like this:
+
+
+![](./16.png) 

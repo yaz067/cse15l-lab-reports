@@ -77,6 +77,51 @@ We’ll see now another way to copy a file (or many files!) from your computer t
 
 
 
+My output like this:
+
+- Open local terminal use 'scp' moving the 'WhereAmI.java'.  
+
+```
+scp WhereAmI.java cs15lwi22ajq@ieng6.ucsd.edu
+```
+
+- Using following(my) command to tranfer local file.
+
+```
+ssh cs15lwi22ajq@ieng6.ucsd.edu:
+```
+
+- Complie the file using following command.
+
+```
+javac WhereAmI.java 
+```
+
+- Run it!
+
+```
+java WhereAmI 
+```
+
+My terminal like this:
+
+
+![](./15.png) 
+
+> Notes: After using 'scp' to copy the file `WhereAmI`, I can the file and its information by 'ls -l' command. The differences of the result after compiling WhereAmI on the server are different directory and user name.  
+
+### Setting an SSH Key
+
+Every time we log in or run scp, we have to type (or copy-paste) our password many times. There's way can this this problem -- ssh key. The idea behind ssh keys is that a program, called ssh-keygen, creates a pair of files called the public key and private key. You copy the public key to a particular location on the server, and the private key in a particular location on the client. Then, the ssh command can use the pair of files in place of your password.  
+
+![](./10.png)  
+
+In my terminal like this:  
+
+![](./11.png)  
+
+## Optimizing Remote Running
+
 
 
 - Open local terminal use 'scp' moving the 'WhereAmI.java'.  
@@ -99,27 +144,3 @@ My terminal like this:
 
 
 ![](./16.png) 
-
-> Notes: After using 'scp' to copy the file `WhereAmI`, I can the file and its information by 'ls -l' command. The differences of the result after compiling WhereAmI on the server are different directory and user name.  
-
-### Setting an SSH Key
-
-Every time we log in or run scp, we have to type (or copy-paste) our password many times. There's way can this this problem -- ssh key. The idea behind ssh keys is that a program, called ssh-keygen, creates a pair of files called the public key and private key. You copy the public key to a particular location on the server, and the private key in a particular location on the client. Then, the ssh command can use the pair of files in place of your password.  
-
-![](./10.png)  
-
-In my terminal like this:  
-
-![](./11.png)  
-
-## Optimizing Remote Running
-
-There are two ways that we can run it!
-1)You can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit.  
-
-![](./12.png)
-
-You can use semicolons to run multiple commands on the same line in most terminals. For example:
-
-![](./13.png)  
-
