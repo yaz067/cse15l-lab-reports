@@ -79,25 +79,25 @@ We’ll see now another way to copy a file (or many files!) from your computer t
 
 My output like this:
 
-1) Open local terminal use 'scp' moving the 'WhereAmI.java'.  
+- Open local terminal use 'scp' moving the 'WhereAmI.java'.  
 
 ```
 scp WhereAmI.java cs15lwi22ajq@ieng6.ucsd.edu
 ```
 
-2) Using following(my) command to tranfer local file.
+- Using following(my) command to tranfer local file.
 
 ```
 ssh cs15lwi22ajq@ieng6.ucsd.edu:
 ```
 
-3) Complie the file using following command.
+- Complie the file using following command.
 
 ```
 javac WhereAmI.java 
 ```
 
-4) Run it!
+- Run it!
 
 ```
 java WhereAmI 
