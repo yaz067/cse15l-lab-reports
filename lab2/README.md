@@ -47,4 +47,5 @@ Link to failure test file:
 The terminal output like this: 
 ![](./t3.png)  
 ## Demostration:   
-Since the md file contains brackets and parenthesis, it will consider it as the correct format of link.  however, this is a bug for the distance between the open paren and closed brackets. This should be considered as an error in the system. However the program will run it without anything happen.
+Since the md file contains brackets and parenthesis, it will consider it as the correct format of link.  however, this is a bug for the distance between the open paren and closed brackets. This should be considered as an error in the system. However the program will run it without anything happen.   
+Therefore, we have to add the condition to make the index of openParen and closedBracket next to each other
