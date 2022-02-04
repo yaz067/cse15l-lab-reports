@@ -34,7 +34,7 @@ Link to failure test file(2 files):
 The terminal output like this:  
 ![](./t2.png)  
 ## Demostration:   
-This bug is causing by the missing closed bracket, but as long as the parenthesis are there the program will still output the link. This is a type of bug which due to the incorrect format of the link.  
+ Bug2: The failure inducing input "a link(google.com)" is a incorrect format of the link in github command. However, this would casue a bug to appear because the program right now would only consider the content if the parenthesis exists. If does not matter whether the brackets exists or not. However, this is definitely a type of bug which would cause the incorrect format of link to still appear in output as the correct link. That is the symptom caused by this bug.
 
 ___
 3rd bug
@@ -47,5 +47,4 @@ Link to failure test file:
 The terminal output like this: 
 ![](./t3.png)  
 ## Demostration:   
-Since the md file contains brackets and parenthesis, it will consider it as the correct format of link.  however, this is a bug for the distance between the open paren and closed brackets. This should be considered as an error in the system. However the program will run it without anything happen.   
-Therefore, we have to add the condition to make the index of openParen and closedBracket next to each other
+Bug 3: "[a link]      (google.com)" is another type of failure inducing input in this program. Since there exists some indentation after the close bracket. The program should not output the actual link within the parenthesis. This is a bug which is causing by the index of closed bracket and open parenthesis. 
