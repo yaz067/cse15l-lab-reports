@@ -1,4 +1,4 @@
-# Lab3 Report  
+# Lab3 Report (Choice 1)  
 
 ## ```.ssh```/config file  
 Using command line below and that's how to find in Vscode:
