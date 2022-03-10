@@ -27,14 +27,15 @@ The second test output:
 ![](./3.png)
 The expected output like this:  
 
-This is our expected output ```"/bar\*"```
-![](./8.png)
+This is our expected output ```"No Link"```
+![](./13.png)
 Corresponding md file:  
-![](./5.png)  
+![](./14.png)  
 md file content:  
-![](./7.png)  
+![](./12.png)  
 Demostration:  
-Code still need to fix, this case is similar to first case. We still need add more code between line 33 and 43.  
+The code only view the content between first left parenthesis and first right parethesis. It does't check if the link is corect.   
+Code still need to fix, we still need add more code between line 33 and 43.  
 ![](./11.png)
 
 
